@@ -1,14 +1,14 @@
-# ZINGOL — Zingol Is Not GNU Or Linux
+# XINL — XINL Is Not Linux
 
 A fully independent kernel, written from scratch.
 
 Made for fun, with no intention of being user-friendly.
 
-ZINGOL is an independent kernel with no code derived from Linux or Unix kernels. Its goal is to be its own thing, rather than another attempt at recreating an existing operating system.
+XINL is an independent kernel with no code derived from Linux or Unix kernels. Its goal is to be its own thing, rather than another attempt at recreating an existing operating system.
 
 It would be a complete miracle if this kernel booted on your computer.
 
-## What is ZINGOL?
+## What is XINL?
 
 ZINGOL is an experimental kernel project built from the ground up. It exists because I wanted to make a kernel, not because the world desperately needed another one.
 
