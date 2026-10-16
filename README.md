@@ -6,7 +6,6 @@ Made for fun, with no intention of being user-friendly.
 
 XINL is an independent kernel with no code derived from Linux or Unix kernels. Its goal is to be its own thing, rather than another attempt at recreating an existing operating system.
 
-It would be a complete miracle if this kernel booted on your computer.
 
 ## What is XINL?
 
@@ -14,20 +13,9 @@ XINL is an experimental kernel project built from the ground up. It exists becau
 
 There is no guarantee that it will work, no guarantee that it will ever be finished, and absolutely no guarantee that it will be useful.
 
-## Philosophy
-
-- "making random bs because i can lol"
-
-
-## Compatibility
-
-Dont expect anything good out of this, and no it probably wont work with anything you want it to.
-
-
-## Contributing
-
-currently private but if this public right now tell me to first change this sentance and the send a pr in.
-
-## Disclaimer
-
-NOT made to be user-friendly, made for fun!
+## how can i install XINL?
+* install qemu
+* install gcc
+* download and extract XINL
+* cd into it and ```gcc -m32 -ffreestanding -fno-pie -c kernel.c -o kernel.o && ld -m elf_i386 -T linker.ld -nostdlib -o kernel.bin boot.o kernel.o```
+* then simply run ```qemu-system-i386 -kernel kernel.bin```
