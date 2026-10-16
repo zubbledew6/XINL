@@ -21,12 +21,12 @@ There is no guarantee that it will work, no guarantee that it will ever be finis
 
 ## Compatibility
 
-Dont expect anything good out of this, and no it probably wont work with anything you want it to, except GNU, we love GNU.
+Dont expect anything good out of this, and no it probably wont work with anything you want it to.
 
 
 ## Contributing
 
-Yeah u can pretty much steal the thing for all i care.
+currently private but if this public right now tell me to first change this sentance and the send a pr in.
 
 ## Disclaimer
 
