@@ -10,7 +10,7 @@ It would be a complete miracle if this kernel booted on your computer.
 
 ## What is XINL?
 
-ZINGOL is an experimental kernel project built from the ground up. It exists because I wanted to make a kernel, not because the world desperately needed another one.
+XINL is an experimental kernel project built from the ground up. It exists because I wanted to make a kernel, not because the world desperately needed another one.
 
 There is no guarantee that it will work, no guarantee that it will ever be finished, and absolutely no guarantee that it will be useful.
 
