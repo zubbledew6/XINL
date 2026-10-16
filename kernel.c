@@ -1,19 +1,30 @@
+int pos = 0;
+
+void print(char msg[]) // printing
+{
+    volatile char *screen = (volatile char *)0xB8000; 
+    int i = 0;
+    while (msg[i] != '\0')
+    {
+        *(screen + pos * 2) = msg[i];
+        *(screen + pos * 2 + 1) = 0x0F;
+        i = i + 1;  
+        pos = pos + 1;
+    }
+   pos = (pos / 80 + 1) * 80;
+}
+
+
+
 void kernel_main(void)
 {
     volatile char *screen = (volatile char *)0xB8000;
-    *screen = ' ';
-    *(screen + 1) = 0x0F;
-    *(screen + 2) = 'c';
-    *(screen + 3) = 0x0F;
-    *(screen + 4) = ':';
-    *(screen + 5) = 0x0F;
-    *(screen + 6) = ' ';
-    *(screen + 7) = 0x0F;
-    *(screen + 8) = ' ';
-    *(screen + 9) = 0x0F;
-    *(screen + 10) = ' ';
-    *(screen + 11) = 0x0F;
-    *(screen + 12) = ' ';
-    *(screen + 13) = 0x0F;
+    for (int i = 0; i < 80 * 25; i++)
+    {
+        screen[i * 2] = ' ';
+        screen[i * 2 + 1] = 0x0F;
 
+    }
+    print("welcome to XINL!");
+    print("if you are seeing this message XINL loaded correctly with no errors.");
 }
