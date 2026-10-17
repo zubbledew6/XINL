@@ -23,6 +23,8 @@ There is no guarantee that it will work, no guarantee that it will ever be finis
 * download and extract XINL
 * cd into the folder
 * run ```nasm -f elf32 boot.asm -o boot.o```
+* run ```gcc -m32 -ffreestanding -fno-pie -c clear.c -o clear.o```
+* run ```gcc -m32 -ffreestanding -fno-pie -c keys.c -o keys.o ```
 * run ```gcc -m32 -ffreestanding -fno-pie -c kernel.c -o kernel.o```
 * run ```ld -m elf_i386 -T linker.ld -nostdlib -o kernel.bin boot.o kernel.o```
 * then simply run ```qemu-system-i386 -kernel kernel.bin```
