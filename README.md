@@ -1,6 +1,6 @@
 # XINL — XINL Is Not Linux
 
-A fully independent kernel, written from scratch.
+An experimental 32-bit kernel written from scratch. No Linux or Unix kernel code.
 
 Made for fun, with no intention of being user-friendly.
 
