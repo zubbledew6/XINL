@@ -26,5 +26,5 @@ There is no guarantee that it will work, no guarantee that it will ever be finis
 * run ```gcc -m32 -ffreestanding -fno-pie -c clear.c -o clear.o```
 * run ```gcc -m32 -ffreestanding -fno-pie -c keys.c -o keys.o ```
 * run ```gcc -m32 -ffreestanding -fno-pie -c kernel.c -o kernel.o```
-* run ```ld -m elf_i386 -T linker.ld -nostdlib -o kernel.bin boot.o kernel.o```
+* run ```ld -m elf_i386 -T linker.ld -o kernel.bin boot.o kernel.o clear.o keys.o```
 * then simply run ```qemu-system-i386 -kernel kernel.bin```
